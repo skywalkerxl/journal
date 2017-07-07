@@ -18,14 +18,22 @@
     <script>
         $(function(){
             var elmArr = [],
-                    $win = $(window);
+                $win   = $(window);
+
+            /*
+            *   each function
+            *   @params
+            *   index
+            *   Element
+            *
+            * */
             $(".visible").each(function(i,elm){
-                $(elm).data("ot",$(elm).offset().top);
+                $(elm).data("ot", $(elm).offset().top); //将元素相对于文档的Y轴坐标 赋值给 data('ot')
                 elmArr.push(elm);
             });
 
             dealClass(1);
-            $win.on("scroll",dealClass);
+            $win.on("scroll",dealClass);//为 "scroll" 绑定 dealClass function
 
             function dealClass(isRemove){
                 var top = $win.height() + $win.scrollTop();
