@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript组件化开发</title>
+    <script src="../../jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<input type="text" id="input" />
+<script>
+    /*
+    *   这种写法变量声明混乱
+    * */
+    $(function(){
+        var input = $('#input');
+
+        //用来获取字数
+        function getNum(){
+            return input.val().length;
+        }
+
+        //渲染元素
+        function render(){
+            var num = getNum();
+
+            //没有字数的容器就新建一个
+            if( $('#inputCount').length == 0 ){
+                input.after('<span id="inputCount"></span>');
+            }
+
+            $('#inputCount').html( num + '个字');
+        }
+
+        //监听事件
+        input.on('keyup',function () {
+            render();
+        });
+
+        //初始化，第一次渲染
+        render();
+    })
+</script>
+</body>
+</html>

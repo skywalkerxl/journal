@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<input type="text" id="input"/>
+<script>
+    //在第一种写法的基础上，使用单个变量模拟命名空间
+    var textCount = {
+        input : null,
+
+        init : function (config) {
+            this.input = $(config.id);
+            this.bind();
+            //该范围对应的对象，可以实现链式调用
+            return this;
+        },
+
+        bind : function () {
+            var self = this;
+            this.input.on('keyup',function () {
+                self.render();
+            })
+        },
+
+        getNum : function () {
+            return this.input.val().length;
+        },
+
+        //渲染元素
+        render : function () {
+            var num = this.getNum();
+
+            if( $('#input-count').length == 0 ){
+                this.input.after('<span id="input-count"></span>');
+            }
+
+            $('#input-count').html( num + '个字' );
+        }
+    }
+
+    $(function () {
+        textCount.init({
+            id : '#input'
+        }).render();
+    });
+
+    //改造之后，代码变得清晰可见了起来，所有的功能都在一个变量下面，特有统一的入口调用的方法
+</script>
+</body>
+</html>

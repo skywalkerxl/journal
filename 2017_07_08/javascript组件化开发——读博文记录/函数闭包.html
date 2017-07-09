@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<input type="text" id="input" />
+<script>
+    var TextCount = (function () {
+        var _bind = function (that) {
+            that.input.on('keyup',function () {
+                that.render();
+            });
+        };
+
+        var _getNum = function (that) {
+            return that.input.val().length;
+        };
+
+        var TextCountFun = function (config) {
+
+        };
+
+        TextCountFun.prototype.init = function (config) {
+            this.input = $(config.id);
+            _bind(this);
+
+            return this;
+        };
+
+        TextCountFun.prototype.render = function (config) {
+            var num = _getNum(this);
+            if( $("#inputCount").length == 0 ){
+                this.input.after('<span id="inputCount"></span>');
+            }
+            $('#inputCount').html( num + '个字' );
+        }
+        //返回构造函数,形成代码链
+        return TextCountFun;
+
+    })();
+
+    $(function () {
+        new TextCount().init({ id : '#input' }).render();
+    })
+</script>
+</body>
+</html>
