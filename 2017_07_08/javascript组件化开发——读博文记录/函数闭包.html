@@ -20,7 +20,6 @@
         };
 
         var TextCountFun = function (config) {
-
         };
 
         TextCountFun.prototype.init = function (config) {
@@ -41,9 +40,10 @@
         return TextCountFun;
 
     })();
+    var textCount = new TextCount();
 
     $(function () {
-        new TextCount().init({ id : '#input' }).render();
+        textCount.init({ id : '#input' }).render();
     })
 </script>
 </body>
