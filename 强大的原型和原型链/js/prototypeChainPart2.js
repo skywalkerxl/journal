@@ -15,5 +15,5 @@ Calculator.prototype = function () {
     return{
         add :add,
         subtract: subtract
-    }
+    } 
 }();
