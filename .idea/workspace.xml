@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca56f800-a20e-4ed7-a99b-2ec6308f84c7" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart1.js" afterPath="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart3.js" afterPath="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart3.js" />
-    </list>
+    <list default="true" id="ca56f800-a20e-4ed7-a99b-2ec6308f84c7" name="默认的" comment="" />
     <ignored path="journal.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="深入理解javascript系列.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="深入理解javascript系列.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/强大的原型和原型链/深入理解javascript系列.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
@@ -128,8 +124,20 @@
       <file leaf-file-name="prototypeChainPart1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="40">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#49#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prototypeChainPart4.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -301,6 +309,7 @@
         <option value="$PROJECT_DIR$/强大的原型和原型链/深入理解javascript系列.html" />
         <option value="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart3.js" />
         <option value="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart1.js" />
+        <option value="$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart4.js" />
       </list>
     </option>
   </component>
@@ -495,12 +504,12 @@
       <workItem from="1499958843744" duration="926000" />
       <workItem from="1500003631491" duration="4091000" />
       <workItem from="1500126624739" duration="599000" />
-      <workItem from="1500214037937" duration="1275000" />
+      <workItem from="1500214037937" duration="1815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37172000" />
+    <option name="totallyTimeSpent" value="37712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1312" y="-8" width="1320" height="784" extended-state="6" />
@@ -542,14 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2017_07_08/javascript组件化开发——读博文记录/作用域隔离.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2017_07_08/javascript组件化开发——读博文记录/函数闭包.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -1230,16 +1231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/强大的原型和原型链/js/原型.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1255,6 +1246,26 @@
         <state relative-caret-position="40">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/强大的原型和原型链/js/prototypeChainPart4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
