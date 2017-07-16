@@ -5,11 +5,11 @@
 
 console.log('************************ 原型使用方法1 *************************');
 /* 在使用原型之前，我们先将代码进行修改，统一归到Calculator中 */
-var Calcultor = function (decimalDigits, tax) {
+var Calculator = function (decimalDigits, tax) {
     this.decimalDigits = decimalDigits;
     this.tax = tax;
 };
-Calcultor.prototype = {
+Calculator.prototype = {
     add : function (x, y) {
         return x + y;
     },
@@ -18,4 +18,4 @@ Calcultor.prototype = {
     }
 
 };
-console.log( Calcultor.add(10, 20) );
+console.log( (new Calculator()).add(10, 20) );
