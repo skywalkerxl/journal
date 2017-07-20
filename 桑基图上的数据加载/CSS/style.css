@@ -1,0 +1,64 @@
+/***
+
+    CSS Reset
+
+*/
+html, body, h1, h2, h3, h4, h5, h6, ul, li{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+
+/*
+
+    public style
+
+
+*/
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/**
+
+    Main style
+
+*/
+.container{
+    position: absolute;
+    width: 1000px; height: 900px; left: 0; right: 0; margin: 50px auto;
+}
+.container .list-wrap{
+    width: 1000px; height: 400px; margin-bottom: 100px;
+}
+.list-wrap ul.table-title{
+    width: 1000px; height: 39px;
+    border-bottom: 1px solid #ccc;
+}
+.list-wrap ul.table-title li{
+    float: left;
+    width: 20%;
+    text-align: center; line-height: 40px; font-weight: bold;
+}
+.list-wrap ul.table-content{
+    width: 1000px; height: 360px;
+    overflow: auto;
+}
+.list-wrap ul.table-content li{
+    width: 1000px; height: 39px;
+    text-align: center; line-height: 40px;
+    border-bottom: 1px solid #ccc; cursor: pointer;
+}
+.list-wrap ul.table-content li:hover{
+    background: #eaeaea; color: #0383c0;
+}
+.list-wrap ul.table-content li.click{
+    background: #0383c0; color:#fff;
+}

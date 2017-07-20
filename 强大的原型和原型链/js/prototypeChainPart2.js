@@ -8,10 +8,10 @@ Calculator.prototype = function () {}();
 Calculator.prototype = function () {
     add = function (x, y) {
         return x + y;
-    },
+    };
     substract = function(x, y){
         return x - y;
-    }
+    };
     return{
         add :add,
         subtract: subtract
